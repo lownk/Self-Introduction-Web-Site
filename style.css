@@ -131,7 +131,7 @@ h1{
 .more{
   width:100px;
   height: 30px;
-  background: #696969;
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   margin: 20px auto;
 }
