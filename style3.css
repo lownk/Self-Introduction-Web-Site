@@ -8,19 +8,26 @@
    color:black;
 }
 
-h1{
-  font-size: 48px;
-  font-weight: 100;
-}
 .contents1{
+  font-weight: 100;
+  font-size: 19px;
+  line-height: 2px;
+  margin-top: 150px;
+}
+.contents11{
+  font-weight: 100;
+  line-height: 2px;
   font-size: 80px;
+  margin-top: 45px;
 }
 .contents1_bold{
+  margin-top: 15px;
   font-size: 20px;
-  font-weight: bold;
-  margin-top: 30px;
+  font-weight: 100;
+  color: #fff;
 }
 .contents2{
+  color: #fff;
   font-size: 15px;
   font-weight: lighter;
 }
@@ -84,7 +91,6 @@ h1{
   text-align: center;
 }
 
-.intro_text > h4,
 .intro_text > h1{
   color:#fff;
 }
@@ -93,8 +99,8 @@ h1{
 
 .main_text0{
   width: 100%;
-  height:601px;
-  margin-top:-132px;
+  height:400px;
+  margin-top:-100px;
 }
 .main_text0 > h1{
   padding-top:116px;
@@ -108,17 +114,27 @@ h1{
   display: flex;
   width:800px;
   height:370px;
-  margin:auto;
+  margin-left: 525px;
 }
 .icons > li {
   flex: 1;
-  background: rgba(255, 255, 255, 0.48);
   margin-top:70px;
   height:450px;
   text-align: center;
 }
-.icons > li > .icon_img{
+.icons > li > .box{
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   margin-top:20px;
+  width:200px;
+  height:200px;
+  border-radius: 70%;
+  overflow: hidden;
+}
+.profile{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
 }
 .icons > li:not(:last-child){
   margin-right: 20px;
@@ -137,9 +153,17 @@ h1{
 }
 
 footer{
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height: 40px;
   display: flex;
   background: rgba(0, 0, 0, 0.2);
-  padding:4px;
+  line-height:40px;
 }
 footer > div:first-child{
   flex:3;

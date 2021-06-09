@@ -13,7 +13,16 @@ h1{
   font-weight: 100;
 }
 .contents1{
+  font-weight: 100;
+  font-size: 19px;
+  line-height: 2px;
+  margin-top: 130px;
+}
+.contents11{
+  font-weight: 100;
+  line-height: 2px;
   font-size: 80px;
+  margin-top: 50px;
 }
 .contents1_bold{
   font-size: 20px;
@@ -23,9 +32,6 @@ h1{
 .contents2{
   font-size: 12px;
   font-weight: lighter;
-}
-.more{
-  margin-top: 50px;d왜안먹고난리
 }
 
 .intro_bg{
@@ -38,7 +44,7 @@ h1{
   display:flex;
   width:1280px;
   margin:auto;
-  height:86px;
+  height:100px;
 }
 .searchArea{
   width:300px;
@@ -97,7 +103,7 @@ h1{
 .main_text0{
   width: 100%;
   height:601px;
-  margin-top:-132px;
+  margin-top:-90px;
 }
 .main_text0 > h1{
   padding-top:116px;
@@ -109,11 +115,12 @@ h1{
 
 .icons{
   display: flex;
-  width:800px;
+  width:600px;
   height:370px;
   margin:auto;
 }
 .icons > li {
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
   flex: 1;
   background: white;
   margin-top:70px;
@@ -132,17 +139,27 @@ h1{
   letter-spacing: -1px;
 }
 .more{
+  line-height:35px;
   width:200px;
-  height: 40px;
+  height:40px;
   background: rgba(0, 0, 0, 0.4);
   color: white;
   margin: 20px auto;
+  text-align: center; auto
 }
 
 footer{
+  position: fixed;
+  bottom: 0px;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  right: 0;
+  width:100%;
+  height: 40px;
   display: flex;
   background: rgba(0, 0, 0, 0.2);
-  padding:4px;
+  line-height:40px;
 }
 footer > div:first-child{
   flex:3;
