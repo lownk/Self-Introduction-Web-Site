@@ -9,7 +9,8 @@
 }
 .intro_bg{
   background-image:url("aboutme2.jpg");
-  width: 100%;
+  background-position: center;
+  width: auto;
   height: 937px;
 }
 .contents1{
@@ -18,6 +19,11 @@
   margin-left: 1050px;
   margin-top: 168px;
   font-weight: lighter;
+}
+
+.intro_text{
+  margin:100px auto; 100px 30px;
+  text-align: left;
 }
 
 .contents11{
@@ -69,20 +75,6 @@
 .nav > li > a{
   color:rgb(124, 124, 124);
 }
-.icons{
-  display: flex;
-  width:800px;
-  height:370px;
-  margin:auto;
-}
-.icons > li {
-  flex: 1;
-  background: white;
-  margin-top:70px;
-  height:390px;
-  text-align: center;
-}
-
 footer{
   position: fixed;
   bottom: 0px;
