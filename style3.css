@@ -37,8 +37,8 @@
   background-position: center;
   width: auto;
   height: 937px;
-}
-
+  }
+  
 .header{
   display:flex;
   width:1280px;
@@ -111,13 +111,6 @@
 .main_text0 > .contents1 {
   text-align: center;
 }
-
-.main_text0 > .icons{
-  min-width: 300px;
-
-
-}
-
 
 .icons{
   display: flex;
