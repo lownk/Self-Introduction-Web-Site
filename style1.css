@@ -8,6 +8,11 @@
    color:black;
 }
 
+A:link {text-decoration:none; color:#fff;}
+      A:visited {text-decoration:none; color:#fff;}
+      A:active {text-decoration:none; color:#fff;}
+      A:hover {text-decoration:none; color:#fff;}
+      
 .contents1{
   font-weight: 100;
   font-size: 19px;
