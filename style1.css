@@ -3,9 +3,17 @@
    list-style: none;
    text-decoration: none;
    border-collapse: collapse;
-   margin:0px;
-   padding:0px;
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
    color:black;
+}
+
+body{
+  background-image:url("backgroundda.jpg");
+  background-position: center;
+  width: 100%;
+  height: auto;
 }
 
 A:link {text-decoration:none; color:#fff;}
@@ -19,11 +27,28 @@ A:link {text-decoration:none; color:#fff;}
   line-height: 2px;
   margin-top: 135px;
 }
-.contents11{
+
+.lg-text{
   font-weight: 100;
   line-height: 2px;
   font-size: 80px;
   margin-top: 55px;
+  color: #fff;
+}
+
+#dynamic{
+  position: relative;
+}
+
+#dynamic::after{
+  content:"";
+  display: block;
+  position: absolute;
+  top:0;
+  right:0;
+  width:4px;
+  height:100%;
+  background-color: white;
 }
 
 h1{
@@ -42,12 +67,6 @@ h1{
   font-weight: lighter;
 }
 
-.intro_bg{
-  background-image:url("backgroundda.jpg");
-  background-position: center;
-  width: auto;
-  height: 937px;
-}
 
 .header{
   display:flex;
