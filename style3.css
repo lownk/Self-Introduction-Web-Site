@@ -32,12 +32,12 @@
   font-weight: lighter;
   }
 
-.intro_bg{
-  background-image:url("backgroundda.jpg");
+body{
+   background-image:url("backgroundda.jpg");
   background-position: center;
-  width: auto;
-  height: 937px;
-  }
+  width: 100%;
+  height: auto;
+}
   
 .header{
   display:flex;
