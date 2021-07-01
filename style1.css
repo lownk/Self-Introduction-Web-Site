@@ -1,201 +1,215 @@
-*{
-  font-family: 'Noto Sans KR', sans-serif;
-   list-style: none;
-   text-decoration: none;
-   border-collapse: collapse;
-   margin:0;
-   padding:0;
-   box-sizing: border-box;
-   color:black;
+* {
+    font-family: "Noto Sans KR", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
 }
 
-body{
-  background-image:url("backgroundda.jpg");
-  background-position: center;
-  width: 100%;
-  height: auto;
+body {
+    background-image:url("backgroundda.jpg");
+    background-position: center;
+    width: 100%;
+    height: auto;
 }
 
-A:link {text-decoration:none; color:#fff;}
-      A:visited {text-decoration:none; color:#fff;}
-      A:active {text-decoration:none; color:#fff;}
-      A:hover {text-decoration:none; color:#fff;}
-      
-.contents1{
-  font-weight: 100;
-  font-size: 19px;
-  line-height: 2px;
-  margin-top: 135px;
+A:link {
+    text-decoration: none;
+    color: #fff;
+}
+A:visited {
+    text-decoration: none;
+    color: #fff;
+}
+A:active {
+    text-decoration: none;
+    color: #fff;
+}
+A:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
-.lg-text{
-  font-weight: 100;
-  line-height: 2px;
-  font-size: 80px;
-  margin-top: 55px;
-  color: #fff;
+.contents1 {
+    font-weight: 100;
+    font-size: 19px;
+    line-height: 1; /* 수정  2px -> 1 */
+    margin-top: 135px;
 }
 
-#dynamic{
-  position: relative;
+.lg-text {
+    font-weight: 100;
+    line-height: 1; /* 수정  2px ->1 */
+    font-size: 80px;
+    margin-top: 15px; /* 수정  55px -> 15px */
+    color: #fff;
+    display: inline-block;
 }
 
-#dynamic::after{
-  content:"";
-  display: block;
-  position: absolute;
-  top:0;
-  right:0;
-  width:4px;
-  height:60px;
-  background-color: white;
+/* 주석 해제 */
+#dynamic {
+    position: relative;
 }
 
-#dynamic.active::after{
-  display: none;
+#dynamic::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%; /* 수정 -> 60px -> 100% */
+    background-color: white;
 }
 
-h1{
-  font-size: 48px;
-  font-weight: 100;
+#dynamic.active::after {
+    display: none;
+}
+/* 주석 해제 끝 */
+
+h1 {
+    font-size: 48px;
+    font-weight: 100;
 }
 
-.contents1_bold{
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 30px;
+.contents1_bold {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 30px;
 }
 
-.contents2{
-  font-size: 12px;
-  font-weight: lighter;
+.contents2 {
+    font-size: 12px;
+    font-weight: lighter;
 }
 
-
-.header{
-  display:flex;
-  width:1280px;
-  margin:auto;
-  height:86px;
+.header {
+    display: flex;
+    width: 1280px;
+    margin: auto;
+    height: 86px;
 }
-.searchArea{
-  width:300px;
-  height:40px;
-  background:rgba(0,0,0,0.2);
-  border-radius: 5px;
-  margin-top:25px;
-  margin-left:20px;
+.searchArea {
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 20px;
 }
-.searchArea > form > input{
-  border:none;
-  width:250px;
-  height:40px;
-  background:rgba(0,0,0,0.0);
-  color:#fff;
-  padding-left:10px;
-}
-
-.placeholder{
-  color:black;
+.searchArea > form > input {
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+    padding-left: 10px;
 }
 
-.searchArea > form > span{
-  width:50px;
-  color:#fff;
-  font-weight:lighter;
-  cursor: pointer;
-}
-.nav{
-  display:flex;
-  justify-content: flex-end;
-  line-height: 86px;
-  width:calc(1280px - 360px);
+.placeholder {
+    color: black;
 }
 
-.nav > li{
-  margin-left:50px;
+.searchArea > form > span {
+    width: 50px;
+    color: #fff;
+    font-weight: lighter;
+    cursor: pointer;
 }
-.nav > li > a{
-  color:#fff;
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 86px;
+    width: calc(1280px - 360px);
 }
 
-.intro_text{
-  width:100%;
-  margin:100px auto; 100px auto;
-  text-align: center;
+.nav > li {
+    margin-left: 50px;
+}
+.nav > li > a {
+    color: #fff;
+}
+
+.intro_text {
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
 }
 
 .intro_text > h4,
-.intro_text > h1{
-  color:#fff;
+.intro_text > h1 {
+    color: #fff;
 }
 
 /* main_text0 */
 
-.main_text0{
-  width: 100%;
-  height:601px;
-  margin-top:-132px;
+.main_text0 {
+    width: 100%;
+    height: 601px;
+    margin-top: -132px;
 }
-.main_text0 > h1{
-  padding-top:116px;
-  text-align: center;
+.main_text0 > h1 {
+    padding-top: 116px;
+    text-align: center;
 }
 .main_text0 > .contents1 {
-  text-align: center;
+    text-align: center;
 }
 
-.icons{
-  display: flex;
-  width:800px;
-  height:370px;
-  margin:auto;
+.icons {
+    display: flex;
+    width: 800px;
+    height: 370px;
+    margin: auto;
 }
 .icons > li {
-  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  background: white;
-  margin-top:110px;
-  height:390px;
-  text-align: center;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background: white;
+    margin-top: 110px;
+    height: 390px;
+    text-align: center;
 }
-.icons > li > .icon_img{
-  margin-top:80px;
+.icons > li > .icon_img {
+    margin-top: 80px;
 }
-.icons > li:not(:last-child){
-  margin-right: 20px;
+.icons > li:not(:last-child) {
+    margin-right: 20px;
 }
-.icons .contents2{
-  width:100px;
-  margin:auto;
-  letter-spacing: -1px;
+.icons .contents2 {
+    width: 100px;
+    margin: auto;
+    letter-spacing: -1px;
 }
-.more{
-  width:100px;
-  height: 30px;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  margin: 20px auto;
+.more {
+    width: 100px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    margin: 20px auto;
 }
 
-footer{
-  position: fixed;
-  bottom: 0px;
-  margin: 0;
-  padding: 0;
-  left: 0;
-  right: 0;
-  width:100%;
-  height: 40px;
-  display: flex;
-  background: rgba(0, 0, 0, 0.2);
-  line-height:40px;
+footer {
+    position: fixed;
+    bottom: 0px;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background: rgba(0, 0, 0, 0.2);
+    line-height: 40px;
 }
-footer > div:first-child{
-  flex:3;
-  text-align: center;
-  color: white;
+footer > div:first-child {
+    flex: 3;
+    text-align: center;
+    color: white;
 }
-footer > div:last-child{
-  flex:9;
+footer > div:last-child {
+    flex: 9;
 }
